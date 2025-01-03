@@ -25,13 +25,14 @@ function addTodo() {
   const div = document.createElement("div");
   const input = document.createElement("input");
   const p = document.createElement("p");
+  const button = document.createElement("button");
   input.setAttribute("type", "checkbox");
-
+  button.setAttribute("value", "X");
   p.innerText = todo.value;
   div.className = "h-der-2-col";
   div.append(input);
   div.append(p);
-
+  div.append(button);
   hder2.append(div);
 }
 
