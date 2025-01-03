@@ -18,14 +18,21 @@ async function getTodos() {
   - 입력 창에서 Enter 키 입력시에도 addTodo() 함수가 실행됩니다.
 */
 function addTodo() {
-  const hder2 = document.querySelector("h-der-2");
+  const hder2 = document.querySelector(".h-der-2");
   const todo = document.querySelector(".todo");
+  console.log("값 =", todo.value);
 
   const div = document.createElement("div");
   const input = document.createElement("input");
-  input.type = "checkbox";
   const p = document.createElement("p");
+  input.setAttribute("type", "checkbox");
+
   p.innerText = todo.value;
+  div.className = "h-der-2-col";
+  div.append(input);
+  div.append(p);
+
+  hder2.append(div);
 }
 
 /*  3. x 버튼을 클릭하면 클릭한 버튼을 갖는 Todo 항목이 삭제됩니다. */
