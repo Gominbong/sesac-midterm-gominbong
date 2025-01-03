@@ -1,0 +1,61 @@
+/* 가상 클래스 선택자 root의 색상들은 필수 사용요소가 아닙니다.
+색상은 자유롭게 구성해주세요. */
+:root {
+  --main-color: #04c82f;
+  --main-bg-color: #e5ffeb;
+}
+.body-wrap {
+  width: 1200px;
+  height: 700px;
+  border: 1px solid black;
+  background-color: pink;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.warp {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.h-der-2-col {
+  display: flex;
+  border: 1px solid red;
+  width: 20%;
+}
+.h-der-2 {
+  background-color: pink;
+  display: flex;
+  width: 100%;
+}
+
+.h-der-1 {
+  background-color: blue;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+.h-der {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  border: 1px solid red;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+}
+
+img {
+  max-width: 90%;
+  max-height: 90%;
+}

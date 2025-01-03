@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>고민봉</title>
+    <link rel="stylesheet" href="./public/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./public/index.js"></script>
+  </head>
+  <body>
+    <div class="body-wrap">
+      <div class="h-der">
+        <div class="warp">
+          <img src="./public/codingon.png" alt="" />
+          <h1>ToDo List</h1>
+        </div>
+      </div>
+      <div class="h-der-1">
+        <div>
+          <input
+            class="todo"
+            type="text"
+            name="text"
+            placeholder="today's todo"
+          />
+          <button onclick="addTodo()">작성</button>
+        </div>
+      </div>
+      <div class="h-der-2">
+        <div class="h-der-2-col">
+          <input type="checkbox" />
+          <p>안녕하세요</p>
+        </div>
+        <div class="h-der-2-col">
+          <input type="checkbox" />
+          <p>안녕하세요</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
